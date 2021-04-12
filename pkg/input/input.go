@@ -24,15 +24,15 @@ func Run(filename string) RulesConfig {
 
 	// Read yaml input file as data stream
 	data, err := ioutil.ReadFile(filename)
-    if err != nil {
-        log.Fatal(err)
-    }
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// Parse data stream using defined rules structure
-    var rules RulesConfig
-    if err := rules.Parse(data); err != nil {
-        log.Fatal(err)
-    }
+	var rules RulesConfig
+	if err := rules.Parse(data); err != nil {
+		log.Fatal(err)
+	}
 
 	return rules
 }
