@@ -23,7 +23,7 @@ func Run(filename string) RulesConfig {
 	fmt.Println("Retrieving input parameters...")
 
 	// Read yaml input file as data stream
-    data, err := ioutil.ReadFile(filename)
+	data, err := ioutil.ReadFile(filename)
     if err != nil {
         log.Fatal(err)
     }
