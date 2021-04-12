@@ -1,0 +1,9 @@
+---
+team: "devops"
+ec2:
+  sizes:
+    - "t2.micro"
+    - "t3.micro"
+  maxCount:
+    - 2
+    - 1
